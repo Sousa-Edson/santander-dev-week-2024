@@ -7,8 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.edson.service.exception.BusinessException;
-
 import java.util.NoSuchElementException;
 
 
@@ -21,7 +19,7 @@ public class GlobalExceptionHandler {
     public ResponseEntity<String> handleBusinessException(IllegalArgumentException businessException) {
         return new ResponseEntity<>(businessException.getMessage(), HttpStatus.UNPROCESSABLE_ENTITY);
     }
-      
+
 
     @ExceptionHandler(NoSuchElementException.class)
     public ResponseEntity<String> handleNotFoundException(NoSuchElementException notFoundException) {
