@@ -6,9 +6,9 @@ Projeto feito segungo DIO.me em Java 17 com Spring Boot 3.
 
 - [x] Java
 - [x] Spring Boot
-- [ ] Spring Data JPA
-- [ ] PostgreSQL
-- [ ] OpenAPI
+- [X] Spring Data JPA
+- [X] PostgreSQL
+- [X] OpenAPI
 - [ ] Railway
 
 ## Estrutura json
